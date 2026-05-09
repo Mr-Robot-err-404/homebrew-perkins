@@ -10,7 +10,7 @@ class Perkins < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.1/perkins_darwin_amd64.tar.gz"
-      sha256 "50f329468c1fab5a8ce67c9988267c51dc98856c4a14de3a3c0d77d887a2fbc7"
+      sha256 "ef2a411a27777ea6bb1b275f61145de5a1a52b67bfff5bb6afaddb5e5a8de334"
 
       define_method(:install) do
         bin.install "perkins"
@@ -18,7 +18,7 @@ class Perkins < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.1/perkins_darwin_arm64.tar.gz"
-      sha256 "938d8c9bb134d9a5885c50ef76ced00f09c836d24d02b8b5531522f9c43a9e7a"
+      sha256 "75a1affc7a37c1d22e561bedce9249d9e88e1c7568ce5e0fb77473a5aae8a29f"
 
       define_method(:install) do
         bin.install "perkins"
@@ -29,14 +29,14 @@ class Perkins < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.1/perkins_linux_amd64.tar.gz"
-      sha256 "9170788169c4226646ddcef02f22c0b0d14f85a5bc6d39f1766e0d803ce942a3"
+      sha256 "2a2b33658ca109e8a61d70195d34cbd0e3a3d5817ceb378ae7f4524b1f7a15b4"
       define_method(:install) do
         bin.install "perkins"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.1/perkins_linux_arm64.tar.gz"
-      sha256 "5d6655de705ca8dc5b7fe2a19b310fd2dc502ad153014b3eab2fd9416ddd2015"
+      sha256 "828066ed9e042a3b9bf4d1302560458e1b45ea07432d1f2e7c359f06c9e74ceb"
       define_method(:install) do
         bin.install "perkins"
       end
