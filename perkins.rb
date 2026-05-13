@@ -5,20 +5,20 @@
 class Perkins < Formula
   desc "Braille ASCII pixel art editor for the terminal"
   homepage "https://github.com/Mr-Robot-err-404/perkins"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.3/perkins_darwin_amd64.tar.gz"
-      sha256 "c8246f3106a625208b64436a2b0615d9c8f3f563f507012922d5e983f51cc357"
+      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.4/perkins_darwin_amd64.tar.gz"
+      sha256 "d23340f5ad67a08247f3bd62d9ee9fe267f5292c79732be8b11091b699bbdda2"
 
       define_method(:install) do
         bin.install "perkins"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.3/perkins_darwin_arm64.tar.gz"
-      sha256 "f298c198982da95e9078abd75e54d8011c465e2b6bbf417c5799c368761a3c07"
+      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.4/perkins_darwin_arm64.tar.gz"
+      sha256 "645bb4c6d69bef19dcbce120dfd4b6c2d802f01b082c2cef3f0668300dbd79ef"
 
       define_method(:install) do
         bin.install "perkins"
@@ -28,15 +28,15 @@ class Perkins < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.3/perkins_linux_amd64.tar.gz"
-      sha256 "fb4d5f7b5af8c8b99cef21d14e13d8d2676683858202511d76dfc5e8cacb2e40"
+      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.4/perkins_linux_amd64.tar.gz"
+      sha256 "bbc6c75c846198ee612c5dd44dbc2cab1fd4829e669ec340d4481a9c6f0276b3"
       define_method(:install) do
         bin.install "perkins"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.3/perkins_linux_arm64.tar.gz"
-      sha256 "c32dfc7ca29024abc64ff88e6a5d016ffd655623e5e1b4cb92b0df8a11b17f3e"
+      url "https://github.com/Mr-Robot-err-404/perkins/releases/download/v0.1.4/perkins_linux_arm64.tar.gz"
+      sha256 "4ffd517795b0f63a64e55b0e204aa5907dce800e65d374fb798bc4bd8556b596"
       define_method(:install) do
         bin.install "perkins"
       end
